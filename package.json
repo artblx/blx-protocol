@@ -1,0 +1,24 @@
+{
+    "name": "blx-protocol",
+    "version": "0.0.1",
+    "description": "Solidity smart contracts for the BLX protocol",
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {
+        "openzeppelin-solidity": "^2.0.0",
+        "solc": "^0.5.0",
+        "solc-js": "^0.5.0",
+        "truffle-hdwallet-provider": "^0.0.6",
+        "truffle-test-utils": "^0.1.0",
+        "web3": "^1.0.0-beta.33"
+    },
+    "devDependencies": {
+        "truffle": "^5.0.0-next.16"
+    },
+    "scripts": {
+        "deploy": "truffle migrate --network ropsten --reset",
+        "develop": "truffle migrate --network development --reset",
+        "test": "truffle test --network ganache"
+    }
+}
